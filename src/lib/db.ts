@@ -39,6 +39,10 @@ export async function createTask(title: string) {
   await pool.execute("INSERT INTO tasks (title) VALUES (?)", [title]);
 }
 
+export async function renameTask(id: number, title: string) {
+  await pool.execute("UPDATE tasks SET title = ? WHERE id = ?", [title, id]);
+}
+
 export async function switchTask(id: number) {
   await pool.execute("UPDATE tasks SET done = 1 - done WHERE id = ?", [id]);
 }

@@ -13,3 +13,8 @@ li span { flex: 1; }
 li.done span { color: #8a93aa; text-decoration: line-through; }
 .check { width: 28px; height: 28px; border: 2px solid #05308c; border-radius: 6px; background: #fff; color: #05308c; font-weight: 700; cursor: pointer; }
 .del { border: 0; background: none; color: #b3261e; font: inherit; font-size: 15px; cursor: pointer; }
+.mod { color: #05308c; font-size: 15px; text-decoration: none; }
+.edit { display: flex; flex: 1; align-items: center; gap: 8px; }
+.edit input { flex: 1; min-width: 0; padding: 8px; border: 1px solid #c7cfe2; border-radius: 6px; font: inherit; }
+.edit button { padding: 8px 14px; border: 0; border-radius: 6px; background: #05308c; color: #fff; font: inherit; font-size: 15px; cursor: pointer; }
+.edit a { color: #5a6480; font-size: 15px; }
