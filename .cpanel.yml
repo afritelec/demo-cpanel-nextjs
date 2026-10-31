@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - export HOME=/home/odoip
-    - source $HOME/nodevenv/repositories/demo-cpanel-nextjs/22/bin/activate && npm install --include=dev && npm run build
-    - mkdir -p tmp && touch tmp/restart.txt
+    - source /home/odoip/nodevenv/repositories/demo-cpanel-nextjs/22/bin/activate && npm install --include=dev && npm run build
+    - touch tmp/restart.txt
