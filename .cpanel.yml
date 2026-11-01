@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export TOKIO_WORKER_THREADS=2 RAYON_NUM_THREADS=2 UV_THREADPOOL_SIZE=2 && source /home/odoip/nodevenv/repositories/demo-cpanel-nextjs/22/bin/activate && npm install --include=dev && npm run build
+    - bash tmp/build.sh
     - touch tmp/restart.txt
